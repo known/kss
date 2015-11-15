@@ -1,0 +1,8 @@
+[
+    {"category":"条码扫描枪","productName":"条码扫描枪","img":"data/portfolio/1.jpg"},
+    {"category":"条码打印机","productName":"条码打印机","img":"data/portfolio/2.jpg"},
+    {"category":"固定读码器","productName":"固定读码器","img":"data/portfolio/3.jpg"},
+    {"category":"数据采集器（PDA）","productName":"数据采集器（PDA）","img":"data/portfolio/4.jpg"},
+    {"category":"无线基站（AP）","productName":"无线基站（AP）","img":"data/portfolio/5.jpg"},
+    {"category":"各类条码标签、碳带","productName":"各类条码标签、碳带","img":"data/portfolio/6.jpg"}
+]
