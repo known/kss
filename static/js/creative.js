@@ -40,21 +40,40 @@
         offset: {
             top: 100
         }
-    })
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
+    });
 
 })(jQuery); // End of use strict
 
 
-$(function(){
+$(function() {
+    $('.swiper-container').slider({
+        imgList: [
+            { img: 'static/img/slider1.jpg', a: 'javascript:;' },
+            { img: 'static/img/slider2.jpg', a: 'javascript:;' },
+            { img: 'static/img/slider3.jpg', a: 'javascript:;' }
+        ],
+        width: '100%', //图片的宽
+        height: '100%', //图片的高
+        isAuto: true, //是否自动轮播
+        moveTime: 10000, //运动时间
+        direction: 'right', //轮播的方向
+        btnWidth: 0, //按钮的宽
+        btnHeight: 0, //按钮的高
+        spanWidth: 10, //span按钮的宽
+        spanHeight: 10, //span按钮的高
+        spanColor: '#fff', //span按钮的颜色
+        activeSpanColor: 'red', //选中的span颜色
+        btnBackgroundColor: 'rgba(0, 0, 0, 0.3)', //两侧按钮的颜色
+        spanRadius: '50%', //span按钮的圆角程度
+        spanMargin: 3, //span之间的距离
+    });
+
     $.getJSON('data/products.json', function(data) {
         var html = '';
         $.each(data, function(i, d) {
             html += '<div class="col-lg-4 col-sm-6">';
             html += '    <a href="#" class="portfolio-box">';
-            html += '        <img src="' + d.img + '" class="img-responsive" alt="">';
+            html += '        <img src="' + d.img + '" class="img-responsive" style="width:100%;height:200px" alt="">';
             html += '        <div class="portfolio-box-caption">';
             html += '            <div class="portfolio-box-caption-content">';
             html += '                <div class="project-category text-faded">' + d.category + '</div>';
