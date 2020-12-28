@@ -1,0 +1,147 @@
+﻿html,body {width:100%;height:100%;}
+body {font-family:Arial,sans-serif;padding-top:40px;}
+ul {margin:0;padding:0;list-style:none;}
+a {text-decoration:none;}
+@media (min-width:1200px) {
+    .container {width:1024px;}
+}
+.content p {text-indent:2em;text-align:justify;}
+.content img {width:100%;}
+
+/*nav*/
+.navbar-default {-webkit-transition:all .35s;-moz-transition:all .35s;transition:all .35s;background-color:#fff;}
+.navbar-default .container {margin-top:0;}
+.navbar-default .nav>li {padding:0 10px;}
+.navbar-default .nav>li>a {
+    text-transform:uppercase;font-size:16px;font-weight:700;
+    color:#222;display:block;height:60px;line-height:60px;padding:0 25px;
+}
+.navbar-default .nav>li.active>a {color:#fe0000;}
+.navbar-brand {padding-top:5px;padding-right:50px;height:50px;}
+.navbar-brand img {height:45px;}
+.nav-child {display:none;transition:all .3s;-webkit-transition:all .3s;}
+.nav-child a {color:#222;display:block;text-decoration:none;}
+.nav-child dd {padding:0 30px;height:40px;line-height:40px;cursor:pointer;text-align:center;}
+.dropdown .nav-child {
+    position:absolute;top:60px;left:-10px;right:-10px;z-index:9999;
+    background-color:#fff;color:#333;border:1px solid #e7e7e7;
+}
+.dropdown .nav-child dd:hover {background-color:#f1f1f1;}
+
+/*swiper*/
+.swiper-container {width:100%;height:450px;}
+.swiper-container .left-btn,.swiper-container .right-btn{display:none;}
+
+/*banner*/
+.banner {width:100%;height:200px;background-size:cover;background-position:bottom;background-repeat:no-repeat;}
+.banner1 {background-image:url(../img/slider3.jpg);}
+.banner2 {background-image:url(../img/slider3.jpg);}
+.banner h2 {padding:50px 0 10px 50px;font-weight:bold;font-size:30px;}
+.banner p {padding:0 0 0 50px;font-size:18px;}
+
+/*section*/
+.section {margin-top:50px;}
+.section-heading {font-size:30px;font-weight:bold;}
+.section-hr {max-width:100px;border-color:#fe0000;border-width:3px;}
+.section-subject {font-size:16px;color:#666;}
+.section h4 {
+    font-size:22px;font-weight:bold;color:#fe0000;
+    border-left:5px solid #ccc;padding:0 20px;
+}
+.section .col-lg-6 img {width:100%;height:300px;}
+.section .content {padding:10px;line-height:30px;font-size:16px;}
+.section .content .fa {color:#fe0000;width:16px;}
+
+.main-product .col-lg-4 {text-align:center;}
+.main-product .item {
+    background-color:#f2f2f2;border-radius:10px;padding:30px;cursor:pointer;height:280px;
+}
+.main-product .item i {font-size:70px;color:#fe0000;margin-bottom:10px;}
+.main-product .item h3 {font-size:18px;}
+.main-product .item hr {
+    border:1px solid #fe0000;width:20px;margin-top:10px;margin-bottom:10px;
+}
+.main-product .item p {text-indent:2em;text-align:justify;}
+.main-product .item:hover {background-color:#fe0000;color:#fff;}
+.main-product .item:hover i {color:#fff;}
+.main-product .item:hover hr {border-color:#fff;}
+
+.main-news li {border-bottom:1px dotted #ccc;}
+.main-news li a {height:50px;line-height:50px;padding:0 10px;font-size:16px;display:block;}
+.main-news li a .cycle {
+    display:inline-block;width:10px;height:10px;background-color:#fe0000;
+}
+.main-news li a cite {float:right;color:#ccc;font-style:normal;}
+.main-news li a:hover .cycle {background-color:#fff;}
+.main-news li a:hover,
+.main-news li a:hover cite {background-color:#fe0000;color:#fff;}
+
+/*footer*/
+footer {margin-top:30px;padding-bottom:20px;color:#ddd;background:#393D49;}
+footer a {color:#ddd;}
+footer a:hover {color:#eee;}
+.footer {padding-bottom:40px;}
+.widget {margin:0 auto;text-align:left;padding-top:20px;}
+.widget h3 {font-size:20px;font-weight:bold;}
+.widget h5 {font-size:16px;font-weight:bold;}
+.widget dd {height:30px;line-height:30px;cursor:pointer;}
+.widget .sitemap li {height:30px;line-height:30px;}
+.footer .left {border-right:1px solid #a2a2a2;}
+.footer .contact img {width:120px;height:120px;}
+.copyright {text-align:center;font-size:14px;border-top:1px solid #494D59;padding-top:20px;}
+
+/*page*/
+.cate-head {margin:0;padding:10px 20px;color:#fff;font-size:18px;font-weight:bold;background-color:#fe0000;}
+.menu-left {margin:10px 0;}
+.menu-left li {height:40px;line-height:40px;border-left:4px solid #fff;}
+.menu-left li:hover,.menu-left li.active {background-color:#f2f2f2;border-left-color:#fe0000;}
+.menu-left li a {display:block;padding-left:40px;font-size:16px;}
+
+/*product-list*/
+.product-list {margin:0 10px;min-height:250px;}
+.product-item {float:left;width:50%;margin-bottom:50px;}
+.product-item a {display:block;height:150px;margin:0 20px;}
+.product-item a img {width:50%;height:100%;float:left;}
+.product-item a .info {float:left;width:50%;}
+.product-item a .info h5 {font-weight:bold;}
+.product-item a .info span {display:block;}
+.main-product .product-item {width:33.33%;}
+.main-product .product-item a img {width:100%;}
+
+/*news-list*/
+.news-list {margin:0 100px;min-height:250px;}
+.news-item {display:block;border-bottom:1px dotted #ccc;padding-bottom:3px;}
+.news-item .img {float:left;margin-right:10px;}
+.news-item img {width:150px;height:80px;}
+.news-item .info {color:#888;font-size:14px;margin-bottom:10px;}
+.news-item .info a {display:block;font-weight:bold;font-size:16px;margin-bottom:10px;}
+
+/*detail*/
+.detail {min-height:300px;}
+.detail h2 {text-align:center;font-size:20px;font-weight:bold;}
+.detail .time {text-align:center;color:#ccc;}
+.detail .content {font-size:16px;margin-top:20px;}
+
+/*foot-bar*/
+.foot-bar {
+    display:none;position:fixed;left:0;right:0;bottom:0;height:50px;
+    background-color:#fff;border-top:1px solid #ccc;
+}
+.foot-bar li {display:inline-block;width:25%;text-align:center;}
+.foot-bar li a {display:inline-block;color:#fe0000;padding-top:8px;text-decoration:none;}
+.foot-bar li a i {display:block;font-size:18px;}
+
+@media(max-width:768px) {
+    .navbar-brand img {height:40px;}
+    .swiper-container {height:200px;}
+    .section .col-lg-6 img {height:150px;}
+    .main-product .item {margin-bottom:20px;}
+    .footer,
+    .news-item .img,
+    .main-news li a cite {display:none;}
+    .product-list,.news-list {margin:0;}
+    .product-item {width:100%;}
+    .product-item a {width:100%;}
+    .foot-bar {display:block;}
+    .copyright {padding-bottom:40px;}
+}

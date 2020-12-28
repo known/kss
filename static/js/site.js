@@ -22,4 +22,34 @@
     }
     Slider.prototype.autoMove = function () { var self = this; this.time = setInterval(function () { if (this.direction == 'left') { $('.left-btn', this.wrap).trigger('click'); } else { $('.right-btn', this.wrap).trigger('click'); } }, self.moveTime) }
     $.fn.extend({ slider: function (option) { option.wrap = this; new Slider(option); } })
-}())
+}());
+
+$(function () {
+    $('.dropdown').mouseenter(function () {
+        $(this).find('.nav-child').show();
+    }).mouseleave(function () {
+        $(this).find('.nav-child').hide();
+    });
+
+    $('#swiper').slider({
+        imgList: [
+            { img: 'static/img/slider1.jpg', a: 'javascript:;' },
+            { img: 'static/img/slider2.jpg', a: 'javascript:;' },
+            { img: 'static/img/slider3.jpg', a: 'javascript:;' }
+        ],
+        width: '100%', //图片的宽
+        height: '100%', //图片的高
+        isAuto: true, //是否自动轮播
+        moveTime: 10000, //运动时间
+        direction: 'right', //轮播的方向
+        btnWidth: 0, //按钮的宽
+        btnHeight: 0, //按钮的高
+        spanWidth: 10, //span按钮的宽
+        spanHeight: 10, //span按钮的高
+        spanColor: '#fff', //span按钮的颜色
+        activeSpanColor: 'red', //选中的span颜色
+        btnBackgroundColor: 'rgba(0, 0, 0, 0.3)', //两侧按钮的颜色
+        spanRadius: '50%', //span按钮的圆角程度
+        spanMargin: 3, //span之间的距离
+    });
+});
