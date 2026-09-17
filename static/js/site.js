@@ -34,8 +34,7 @@ $(function () {
     $('#swiper').slider({
         imgList: [
             { img: 'static/img/slider1.jpg', a: 'javascript:;' },
-            { img: 'static/img/slider2.jpg', a: 'javascript:;' },
-            { img: 'static/img/slider3.jpg', a: 'javascript:;' }
+            { img: 'static/img/slider2.jpg', a: 'javascript:;' }
         ],
         width: '100%', //Í¼Æ¬µÄ¿í
         height: '100%', //Í¼Æ¬µÄ¸ß
